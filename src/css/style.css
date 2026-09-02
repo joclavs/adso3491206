@@ -33,6 +33,10 @@ body{
     }
      &.emmet { 
              background: linear-gradient(#88e426, rgb(38, 51, 42));
+            main {
+            background: linear-gradient(#88e426, rgb(51, 38, 38));
+            border-radius: 0.4rem;
+            padding: 5rem;  
         section {
             h2.subtitle { 
                 color:#26e429;
@@ -40,19 +44,30 @@ body{
                 padding-bottom: 0.4rem;
             
             small {
-                color: #fff;
+                color: #d7e0d5;
                 font-size: 0.9rem;
                 font-weight: 400;
             }
         }
+        h3{
+            color: #1acb16;
+            margin:0;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        xmp{
+            background-color: #0009;
+            border-radius: 8px;
+            padding:0.6rem;
+            margin:0;
+        }
 }
- }
-    &.html {
-  
-        main {
-            background: linear-gradient(#88e426, rgb(51, 38, 38));
-            border-radius: 0.4rem;
-            padding: 5rem;
+}}
+ 
+ 
+    &.html {  
+ 
             header.mainmenu {
                 &.internal {
                     h1 {
@@ -80,7 +95,7 @@ body{
                 }
                 
                 section {
-                    background-color:black;
+                    background-color:rgb(66, 120, 81);
                     border-radius: 0.4rem;
                     margin-top: 2rem;
                     padding: 0.8rem;
@@ -89,7 +104,7 @@ body{
                 }
             }
         } 
-}
+
 
 h1{
     font-size: 5em;
