@@ -1,0 +1,12 @@
+div.flag {
+            align-items: center;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            margin: 1rem auto;
+            width: 280px;
+           
+            &.japan {
+                background:radial-gradient(circle, #e61919 34.15%, #e61919 34.15% 66.66%, #fff 66.66% 77%);
+            }
+        }
