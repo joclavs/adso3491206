@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>12-colors-alpha</title>
     <link rel="stylesheet" href="../src/css/style.css">
+    <style>
+        div.mario{
+            background: url(../src/imgs/mario.png) no-repeat
+                        center /contain;
+            border: 2px solid #fff9;
+            margin: 1rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 400px;
+            width: 300px;
+            div {
+                width: 300px;
+                height: 100px;
+                &.box1 {background-color: #ab7dd9ff; }
+                &.box2 {background-color: #ab7dd9ee; }
+                &.box3 {background-color: #ab7dd9dd;}
+                &.box4 {background-color: #ab7dd9cc; }
+                &.box5 {background-color: #ab7dd9bb; }
+                &.box6 {background-color: #ab7dd9aa; }
+                &.box7 {background-color: #ab7dd999; }
+                &.box8 {background-color: #ab7dd988; }
+                &.box9 {background-color: #ab7dd977; }
+                &.box10 {background-color: #ab7dd966; }
+                &.box11 {background-color: #ab7dd955; }
+                &.box12 {background-color: #ab7dd944; } 
+            }
+        }
+    </style>
 </head>
 <body class="css">
     <nav class="back">
@@ -20,6 +50,22 @@
 </h3>
         </header>
         <section>
+            <h2 class="subtitle"> HSLA|RGBA </h2>
+            <div class="mario">
+              <div class="box1"></div>
+              <div class="box2"></div>
+              <div class="box3"></div>
+              <div class="box4"></div>
+              <div class="box5"></div>
+              <div class="box6"></div>
+              <div class="box7"></div>
+              <div class="box8"></div>
+              <div class="box9"></div>
+              <div class="box10"></div>
+              <div class="box11"></div>
+              <div class="box12"></div>
+            </div>
+
         </section>
         
     </main>

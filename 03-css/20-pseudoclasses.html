@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20-pseudoclasses</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <style>
+        /* :link |:hover |:active |:visited */
+        .options {
+            a:link, a :visited {
+            background-color: #fff9;
+            color:#0009;
+            padding: 0.4rem 0.8rem;
+        }
+        a:hover {
+            background-color: #663399;
+            color:#fff9
+        }
+        a:active {
+            background: color #dc143c;
+            color:#fff9
+        }
+        a:first-child {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+      }
+      /* focus, :blur */
+      input {
+      padding: 0.4rem;
+      margin-top: 0.4rem;
+      &:focus {
+        background-color: #663399;
+        color: #fff9;
+      }
+       }
+       /* :first-letter | :first-line */
+       p.paragraph { 
+         &:first-line {
+            background-color: #663399;
+        }
+        &:first-letter {
+         font-size: 4rem;
+    }
+     } 
+     /* :after | :before */
+       div.heart {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            background-color: #dc143c;
+            transform: rotate(-45deg);
+            margin-top: 1rem;
+        }
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 90px;
+            background-color: #dc143c;
+        }
+        .heart::before {
+            top: -50px;
+            left: 0;
+            border-radius: 50%;
+        }
+        .heart::after {
+            top: 0;
+            left: 50px;
+            border-radius: 50%;
+        }
+    
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu internal">
+            <h1>20-pseudoclasses</h1>
+            <img src="/src/imgs/logo-css.png" alt="css">
+            <h3>Se utiliza para definir un estado de un elemento</h3>
+        </header>
+        <section>
+            <h2 class="subtitle">:link|:hover|:active|:visited</h2>
+            <h4>:first-child|:last-child</h4>
+            <div class="options">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+            <h2 class="subtitle">:focus</h2>
+            <input type="text" placeholder="Enter your First Name">
+            <br>
+            <input type="text" placeholder="Enter your Last Name">
+            <h2 class="subtitle">:first-letter|:first-line</h2>
+            <p class="paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam est fugit omnis.
+            </p>
+            <h2 class="subtitle">:before|:after</h2>
+            <div class="heart"></div>
+        
+        </section>
+        
+    </main>
+     

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16-Float</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+     <style>
+        section {
+            div {
+                border: 2px solid #fff;
+                margin: 1rem auto;
+                padding: 1rem;
+                width: 360px;
+
+                img {
+                    width: 80px;
+                }
+                &.float01 img {
+                    float: left;
+                    margin-right: 1rem;
+                }
+                &.float02 img {
+                    float: right;
+                    margin-left: 1rem;
+                }
+                &.float03 img {
+                    float: none;
+                }
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu internal">
+            <h1>16-Float</h1>
+            <img src="/src/imgs/logo-css.png" alt="css">
+            <h3>Pushes the element to either the left or right side.</h3>
+        </header>
+       <section>
+            <h2 class="subtitle">Float Left</h2>
+            <div class="float01">
+                <img src="../src/imgs/mario.png" alt="mario">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            </div>
+            <h2 class="subtitle">Float Right</h2>
+            <div class="float02">
+                <img src="../src/imgs/mario.png" alt="mario">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            </div>
+            <h2 class="subtitle">Float None</h2>
+            <div class="float03">
+                <img src="../src/imgs/mario.png" alt="mario">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            </div>
+        </section>
+        
+    </main>
