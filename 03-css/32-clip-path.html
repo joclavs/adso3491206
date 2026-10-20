@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32-clip-path</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <style>
+        div.clip {
+            background: url(/src/imgs/pittsburgh.jpg) no-repeat center;
+            background-size: cover;
+            height: 280px;
+            margin-block: 1rem;
+            margin-inline: auto;
+            transition: all 0.4s ease-in;
+            width: 320px;
+        }
+        div.clip1 {
+            clip-path: polygon(50% 0, 50% 0, 100% 100%, 0% 100%);
+        }
+        div.clip2 {
+            clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+        }
+        div.clip1:hover {
+            clip-path: polygon(50% 0%, 100% 0, 98% 35%, 99% 99%, 76% 100%, 48% 100%, 21% 100%, 0 100%, 2% 35%, 0 0);
+
+        }
+        div.clip2:hover {
+            clip-path: polygon(20% 0%, 0% 20%, 0 50%, 0% 80%, 20% 100%, 49% 100%, 80% 100%, 100% 80%, 100% 50%, 100% 20%, 80% 0%, 50% 0);
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu internal">
+            <h1>32-clip-path</h1>
+            <img src="/src/imgs/logo-css.png" alt="css">
+            <h3>Propiedad que define una región de recorte para mostrar solo una porción específica del elemento (usando formas como circle(), polygon() o rutas SVG).</h3>
+        </header>
+       <section>
+            <h2 class="subtitle">Example 01:</h2>
+            <div class="clip clip1"></div>
+            <h2 class="subtitle">Example 02:</h2>
+            <div class="clip clip2"></div>
+        </section>
+        
+    </main>

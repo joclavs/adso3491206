@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-text-shadow</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <style>
+        section {
+            p.txt {
+                font-size: 3.6rem;
+                text-align: center;
+                &.txt1 {
+                    text-shadow: 0px 0px 16px rgba(228, 224, 224, 0.6);
+                }
+                &.txt2 {
+                    text-shadow: -8px -8px 8px red;
+                }
+                &.txt3 {
+                    font-weight: 700;
+                    text-shadow:     0 1px 0 hsl(174,5%,80%),
+	                 0 2px 0 hsl(174,5%,75%),
+	                 0 3px 0 hsl(174,5%,70%),
+	                 0 4px 0 hsl(174,5%,66%),
+	                 0 5px 0 hsl(174,5%,64%),
+	                 0 6px 0 hsl(174,5%,62%),
+	                 0 7px 0 hsl(174,5%,61%),
+	                 0 8px 0 hsl(174,5%,60%),
+	
+	                 0 0 5px rgba(0,0,0,.05),
+	                0 1px 3px rgba(0,0,0,.2),
+	                0 3px 5px rgba(0,0,0,.2),
+	               0 5px 10px rgba(0,0,0,.2),
+	              0 10px 10px rgba(0,0,0,.2),
+	              0 20px 20px rgba(0,0,0,.3);
+                }
+                &.txt4 {
+                    font-weight: 400;
+                    text-shadow: -5px 0 0 yellow, 
+                                 -12px 0 0 rgba(4, 255, 0, 0.641);
+                }
+            }
+
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu internal">
+            <h1>30-text-shadow</h1>
+            <img src="/src/imgs/logo-css.png" alt="css">
+            <h3>Propiedad que añade efectos de sombra directamente al texto, aceptando valores de desplazamiento, radio de desenfoque y color.</h3>
+        </header>
+        <section>
+            <h2 class="subtitle">Examples:</h2>
+            <p class="txt txt1">ADSO</p>
+            <p class="txt txt2">C.P.I.C</p>
+            <p class="txt txt3">SENA</p>
+            <p class="txt txt4">Caldas</p>
+        </section>
+        
+    </main>

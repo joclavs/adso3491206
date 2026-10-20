@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31-filters</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <style>
+        section {
+            .filter {
+                display: block;
+                margin: 1rem auto;
+                width: 160px;
+                height: 300px;
+                transition: all 0.4s ease-in;
+                
+                &.filter1 {
+                    filter: grayscale(100%);
+                }
+                &.filter2 {
+                    filter: blur(80px);
+                }
+                &.filter3 {
+                    filter: sepia(100%);
+                }
+                &.filter4 {
+                    filter: brightness(50%);
+                }
+                &.filter5 {
+                    filter: invert(100%);
+                }
+                &.filter6 {
+                    filter: drop-shadow(16px 16px 20px red);
+                }
+                &.filter7 {
+                    filter: hue-rotate(125deg);
+                }
+                &:hover {
+                    filter: none;
+                  }  
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu internal">
+            <h1>31-filters</h1>
+            <img src="/src/imgs/logo-css.png" alt="css">
+            <h3> Propiedad (filter) que aplica efectos visuales o gráficos (ej. blur(), grayscale(), contrast(), drop-shadow()) a un elemento antes de renderizarlo.</h3>
+        </header>
+        <section>
+            <h2 class="subtitle">GrayScale</h2>
+            <img class="filter filter1" src="/src/imgs/inosuke.png" alt="Inosuke">
+            <h2 class="subtitle">Blur</h2>
+            <img class="filter filter2" src="/src/imgs/inosuke.png" alt="Inosuke">
+            <h2 class="subtitle">Sepia</h2>
+            <img class="filter filter3" src="/src/imgs/inosuke.png" alt="Inosuke">
+            <h2 class="subtitle">Brightness</h2>
+            <img class="filter filter4" src="/src/imgs/inosuke.png" alt="Inosuke">
+            <h2 class="subtitle">Invert</h2>
+            <img class="filter filter5" src="/src/imgs/inosuke.png" alt="Inosuke">
+            <h2 class="subtitle">Drop Shadow</h2>
+            <img class="filter filter6" src="/src/imgs/inosuke.png" alt="Inosuke">
+            <h2 class="subtitle">Hue Rotate</h2>
+            <img class="filter filter7" src="/src/imgs/inosuke.png" alt="Inosuke">
+        </section>
+        
+    </main>
