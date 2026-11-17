@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>45-Challenge Grid</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a4b7dc;
+    padding: 10px;
+}
+
+/* Contenedor principal */
+
+.galeria {
+    width: 100%;
+    max-width: 748px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 263px);
+
+    gap: 6px;
+
+    grid-template-areas:
+        "demon attack kenshin"
+        "jujutsu attack solo"
+        "slam slam chainsaw";
+}
+
+/* Estilos generales de las imágenes */
+
+.imagen {
+    border: 4px solid white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Ubicación de cada imagen */
+
+.demon {
+    grid-area: demon;
+}
+
+.attack {
+    grid-area: attack;
+}
+
+.kenshin {
+    grid-area: kenshin;
+}
+
+.jujutsu {
+    grid-area: jujutsu;
+}
+
+.solo {
+    grid-area: solo;
+}
+
+.slam {
+    grid-area: slam;
+}
+
+.chainsaw {
+    grid-area: chainsaw;
+}
+
+/* Adaptación para pantallas pequeñas */
+
+@media (max-width: 550px) {
+    .galeria {
+        grid-template-rows: repeat(3, 180px);
+        gap: 5px;
+    }
+
+    .imagen {
+        border-width: 3px;
+        border-radius: 8px;
+    }
+}</style>
+    
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu internal">
+            <h1>45-Challenge Grid</h1>
+            <img src="/src/imgs/logo-css.png" alt="css">
+            <h3> Ejercicio práctico para construir una galería de imágenes irregular y dinámica utilizando las propiedades de expansión de CSS Grid (grid-column, grid-row).</h3>
+        </header>
+        <section>
+            <h2 class="subtitle">Challenge: </h2>
+            <div class="bg">
+            </div>
+            <div class="imagen demon">
+            <img src="/src/imgs/ani01.png" alt="Demon Slayer">
+        </div>
+
+        <div class="imagen attack">
+            <img src="/src/imgs/ani02.png" alt="Attack on Titan">
+        </div>
+
+        <div class="imagen kenshin">
+            <img src="/src/imgs/ani03.png" alt="Rurouni Kenshin">
+        </div>
+
+        <div class="imagen jujutsu">
+            <img src="/src/imgs/ani04.png" alt="Jujutsu Kaisen">
+        </div>
+
+        <div class="imagen solo">
+            <img src="/src/imgs/ani05.png" alt="Anime">
+        </div>
+
+        <div class="imagen slam">
+            <img src="/src/imgs/ani06.png" alt="Slam Dunk">
+        </div>
+
+        <div class="imagen chainsaw">
+            <img src="/src/imgs/ani07.png" alt="Chainsaw Man">
+        </div>
+        </section>
+        
+    </main>
