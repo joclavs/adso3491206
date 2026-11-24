@@ -5,95 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>45-Challenge Grid</title>
     <link rel="stylesheet" href="../src/css/style.css">
-    <style>* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <style>
+        .gallery {
+            display: grid;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto 20px;
+            box-sizing: border-box;
+        }
 
-body {
-    background-color: #a4b7dc;
-    padding: 10px;
-}
+        .gallery div {
+            margin: 5px;
+            background: #8aa4e8;
+            border-radius: 8px;
+            overflow: hidden;
+        }
 
-/* Contenedor principal */
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
 
-.galeria {
-    width: 100%;
-    max-width: 748px;
-    margin: auto;
+        .a { grid-area: a; }
+        .b { grid-area: b; }
+        .c { grid-area: c; }
+        .d { grid-area: d; }
+        .e { grid-area: e; }
+        .f { grid-area: f; }
+        .g { grid-area: g; }
 
-    display: grid;
+        .gallery-1 {
+            aspect-ratio: 3 / 3;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                "a b c"
+                "d b e"
+                "f f g";
+        }
 
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 263px);
-
-    gap: 6px;
-
-    grid-template-areas:
-        "demon attack kenshin"
-        "jujutsu attack solo"
-        "slam slam chainsaw";
-}
-
-/* Estilos generales de las imágenes */
-
-.imagen {
-    border: 4px solid white;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.imagen img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-/* Ubicación de cada imagen */
-
-.demon {
-    grid-area: demon;
-}
-
-.attack {
-    grid-area: attack;
-}
-
-.kenshin {
-    grid-area: kenshin;
-}
-
-.jujutsu {
-    grid-area: jujutsu;
-}
-
-.solo {
-    grid-area: solo;
-}
-
-.slam {
-    grid-area: slam;
-}
-
-.chainsaw {
-    grid-area: chainsaw;
-}
-
-/* Adaptación para pantallas pequeñas */
-
-@media (max-width: 550px) {
-    .galeria {
-        grid-template-rows: repeat(3, 180px);
-        gap: 5px;
-    }
-
-    .imagen {
-        border-width: 3px;
-        border-radius: 8px;
-    }
-}</style>
+        .gallery-2 {
+            aspect-ratio: 4 / 3;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                "a a b c"
+                "a a d d"
+                "e f d d";
+        }
+    </style>
     
 </head>
 <body class="css">
@@ -108,37 +70,27 @@ body {
             <img src="/src/imgs/logo-css.png" alt="css">
             <h3> Ejercicio práctico para construir una galería de imágenes irregular y dinámica utilizando las propiedades de expansión de CSS Grid (grid-column, grid-row).</h3>
         </header>
-        <section>
-            <h2 class="subtitle">Challenge: </h2>
-            <div class="bg">
+       <section>
+            <h3>DM17</h3>
+            <div class="gallery gallery-1">
+                <div class="a"><img src="/src/imgs/dm05.jpg" alt=""></div>
+                <div class="b"><img src="/src/imgs/dm03.jpg" alt=""></div>
+                <div class="c"><img src="/src/imgs/dm02.jpg" alt=""></div>
+                <div class="d"><img src="/src/imgs/dm04.jpg" alt=""></div>
+                <div class="e"><img src="/src/imgs/dm01.jpg" alt=""></div>
+                <div class="f"><img src="/src/imgs/dm07.jpg" alt=" "></div>
+                <div class="g"><img src="/src/imgs/dm06.jpg" alt=" "></div>
             </div>
-            <div class="imagen demon">
-            <img src="/src/imgs/ani01.png" alt="Demon Slayer">
-        </div>
-
-        <div class="imagen attack">
-            <img src="/src/imgs/ani02.png" alt="Attack on Titan">
-        </div>
-
-        <div class="imagen kenshin">
-            <img src="/src/imgs/ani03.png" alt="Rurouni Kenshin">
-        </div>
-
-        <div class="imagen jujutsu">
-            <img src="/src/imgs/ani04.png" alt="Jujutsu Kaisen">
-        </div>
-
-        <div class="imagen solo">
-            <img src="/src/imgs/ani05.png" alt="Anime">
-        </div>
-
-        <div class="imagen slam">
-            <img src="/src/imgs/ani06.png" alt="Slam Dunk">
-        </div>
-
-        <div class="imagen chainsaw">
-            <img src="/src/imgs/ani07.png" alt="Chainsaw Man">
-        </div>
         </section>
-        
+        <section>
+            <h3>Los Simpson</h3>
+            <div class="gallery gallery-2">
+                <div class="a"><img src="/src/imgs/simp03.jpg" alt=""></div>
+                <div class="b"><img src="/src/imgs/simp02.jpg" alt=""></div>
+                <div class="c"><img src="/src/imgs/simp04.webp" alt=""></div>
+                <div class="d"><img src="/src/imgs/simp01.webp" alt=""></div>
+                <div class="e"><img src="/src/imgs/simp05.jpg" alt=""></div>
+                <div class="f"><img src="/src/imgs/simp06.webp" alt=""></div>
+            </div>
+        </section>       
     </main>
